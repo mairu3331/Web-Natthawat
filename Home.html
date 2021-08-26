@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+
+<title>Mairu WEB</title>
+ <title>Bootstrap Example</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/lib/w3.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<style>
+body{
+background-color: lightblue;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+footer {
+  background-color: #333;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+</style>
+</head>
+
+<body>
+
+<ul>
+  <li><a class="active" href="Home.html">Home</a></li>
+  <li><a href="Flowers.html">Flowers</a></li>
+  <li><a href="Travels.html">Travels</a></li>
+  
+</ul>
+<br></br>
+<center><h1 style="color:red;">WELCOME Natthawat</h1></center>
+<center>
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="img/B.jpg" style="width:100%">
+  <img class="mySlides" src="img/D.jpg" style="width:100%">
+  <img class="mySlides" src="img/G.jpg" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+</center>
+</body>
+<br></br>
+<body>
+
+<div class="container">
+  <h2>LOGIN</h2>
+  <form action="/action_page.php">
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" name="remember"> Remember me</label>
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+  
+</div>
+
+</body>
+<br></br>
+<footer>
+  <p>By Natthawat Inthaprangkool</p>
+</footer>
+</html>
